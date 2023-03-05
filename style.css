@@ -1,3 +1,7 @@
+@font-face{
+    font-family: Norse-Bold;
+    src: url("./Norse-Bold.otf") format("opentype");
+}
 body {
     display: flex;
     flex-direction: row;
@@ -8,7 +12,7 @@ body {
     background-image: url("./circuit.jpg");
     background-repeat: no-repeat;
     height: 100vh;
-    width: 50vw;
+    width: max(33%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,14 +21,82 @@ body {
 
 .left-half-title-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     background-color: rgba(91, 91, 91, 0.7);
     color : white;
     font-size: 64px;
     font-weight: 900;
+    height: max(18%);
+    font-family: Norse-Bold;
+    margin-bottom: 15rem;
 }
 
-image {
-    width: 10%;
+img {
+    width: 25%;
+    height: auto;
 }
+
+.right-half{
+background-color: rgba(242, 242, 242, 0.875);
+width: 100%;
+}
+
+.spacer{
+    height: min(10vh);
+}
+
+.top-right-card{
+    display: flex;
+    flex-direction: column;
+    font-weight: 550;
+    padding: min(8px);
+    padding-left: min(16px);
+    justify-content: space-evenly;
+}
+
+.entice{
+    font-style: italic;
+}
+
+.middle-right-card{
+    background-color: white;
+    height: max(33vh);
+    padding: min(8px);
+    padding-left: min(16px);
+    box-shadow: 1px 1px lightgrey;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+button,
+input,
+select,
+textarea,
+label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 80%;
+    font-weight: 900;
+    box-sizing: border-box;
+    border-color: rgb(255, 255, 255);
+}
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: min(4px);
+    padding-left: min(24px);
+    padding-right: min(24px);
+}
+
+
+
+
