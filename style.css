@@ -98,5 +98,35 @@ label{
 }
 
 
+.bottom-right-card{
+    padding-left: min(12px);
+}
 
 
+input:focus{
+    border: 3px solid blue;
+    -webkit-transition: 0.1s;
+}
+
+button{
+    background-color: green;
+    color: white;
+    margin: min(8px);
+    margin-top: min(24px);
+    border-radius: min(5px);
+    padding: min(8px);
+}
+
+a{
+    color: green;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.login{
+    margin-left: min(8px);
+}
+
+.validate:invalid{
+    border-color: red;
+}
