@@ -127,6 +127,6 @@ a{
     margin-left: min(8px);
 }
 
-.validate:invalid{
-    border-color: red;
+#message{
+    color: red;
 }

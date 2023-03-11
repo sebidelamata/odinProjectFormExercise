@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form exercise page</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="left-half">
@@ -69,13 +70,14 @@
                     <div>
                         <form class="validate" id="password-form" action="./database/path" method="post">
                             <label for="password">*Password:</label>
-                            <input type="password" id="password" required>
+                            <input type="password" id="password" required onkeyup="validatePassword()">
                         </form>
                     </div>
                     <div>
                         <form class="validate" id="confirm-password-form" action="./database/path" method="post">
-                            <label for="confirm_password">*Confirm Password:</label>
-                            <input type="password" id="confirm_password" required>
+                            <label for="confirm-password">*Confirm Password:</label>
+                            <input type="password" id="confirm-password" required onkeyup="validatePassword()">
+                            <span id="message"></span>
                         </form>
                     </div>
                 </div>
